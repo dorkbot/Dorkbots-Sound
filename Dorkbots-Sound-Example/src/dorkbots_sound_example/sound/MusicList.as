@@ -1,0 +1,1 @@
+﻿package dorkbots_sound_example.sound {	/**	 * This static class is used to store all music string sound class names used by the project. 	 */		public class MusicList	{		public static const HALLOWEEN_LOOP:String = "HalloweenLoop";				public static const AMOUNT:uint = 1;				public function MusicList() 		{		}	}}
