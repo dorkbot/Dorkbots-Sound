@@ -1,0 +1,1 @@
+﻿package sound {	/**	 * This static class is used to store all voice-over string sound class names used by the project. 	 */		public class VoiceOverList 	{		public static const L_CE_1:String = "l_ce_1";				public static const AMOUNT:uint = 1;				public function VoiceOverList() 		{					}	}}
