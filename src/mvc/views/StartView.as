@@ -18,7 +18,7 @@ package mvc.views
 			controller = aController;
 		}
 		
-		public function init():void
+		public final function init():void
 		{			
 			start_btn.addEventListener(MouseEvent.CLICK, startBtnClicked);
 		}
@@ -30,7 +30,7 @@ package mvc.views
 			controller.openSoundExample();
 		}
 		
-		public function dispose():void
+		public final function dispose():void
 		{
 			start_btn.removeEventListener(MouseEvent.CLICK, startBtnClicked);
 			

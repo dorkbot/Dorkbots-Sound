@@ -1,20 +1,20 @@
 package mvc.views
 {
 	import com.dVyper.utils.Alert;
-	import dorkbots.dorkbots_effects.fireworks.Fireworks;
-	import dorkbots.dorkbots_ui.DragObject;
-	import dorkbots.dorkbots_ui.scrollbars.ScrollBarHorizontal;
-	import dorkbots.dorkbots_ui.scrollbars.ScrollBars;
 	
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	
 	import dorkbots.dorkbots_broadcasters.IBroadcastedEvent;
+	import dorkbots.dorkbots_effects.fireworks.Fireworks;
 	import dorkbots.dorkbots_sound.SoundEvents;
 	import dorkbots.dorkbots_sound.SoundManager;
 	import dorkbots.dorkbots_sound.sound.SoundObject;
 	import dorkbots.dorkbots_sound.sound.SoundObjectVars;
+	import dorkbots.dorkbots_ui.DragObject;
+	import dorkbots.dorkbots_ui.scrollbars.ScrollBarHorizontal;
+	import dorkbots.dorkbots_ui.scrollbars.ScrollBars;
 	
 	import mvc.Controller;
 	import mvc.Model;
@@ -46,7 +46,7 @@ package mvc.views
 			controller = aController;
 		}
 		
-		public function init():void
+		public final function init():void
 		{
 			// Alert window - Opens when the VO is finished
 			Alert.init( this.stage, { colour:0x006633, textColour:0xFFFFFF } );
@@ -178,7 +178,7 @@ package mvc.views
 			fireworksSFX.playSound( new SoundObjectVars().adjustVol(2).restart( true ).position( postionPoint ) );
 		}
 		
-		public function dispose():void
+		public final function dispose():void
 		{
 			close_btn.removeEventListener(MouseEvent.CLICK, closeBtnClicked);
 			startVO_btn.removeEventListener(MouseEvent.CLICK, startVOBtnClicked);
